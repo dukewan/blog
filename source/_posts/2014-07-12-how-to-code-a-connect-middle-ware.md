@@ -48,10 +48,10 @@ nodejs 中，http server 有两个参数传入，分别是 request 和 response 
 ```
 `<!--#include virtual="./mod/header.html"-->`
 ```
+
 的命令来实现引用。
 
 现在在 nodejs 环境下开发，就没有了这种支持。所以我们要自己动手，丰衣足食。没有的，我们就自己创造工具。
-
 
 # 功能、接口设计
 
