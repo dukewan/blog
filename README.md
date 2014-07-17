@@ -1,18 +1,18 @@
 blog
 ====
 
-my blog powered by hexo 
+My blog powered by hexo 
 
-# about
+## About
 
 Hi,I'm HeYizhao. 
 
 I'm a front end developer and I will share my programing life with you at this blog.
 
-# powered
+## Powered
 
 powered by hexo [http://hexo.io/](http://hexo.io/)
 
-# theme
+## Theme
 
 theme [pacman by A-limon](https://github.com/A-limon/pacman)
