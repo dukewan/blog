@@ -10,15 +10,15 @@ menu:
 ## ---
 
 #### Widgets
-widgets: 
+widgets:
 - category
 - tag
-##- rss
+- rss
 ## provide six widgets:category,tag,rss,archive,tagcloud,links.
 ## modify links in `/layout/_widget/links.ejs`.
 
 #### RSS
-rss: /rss.xml ## RSS address.
+rss: /atom.xml ## RSS address.
 
 #### Image
 imglogo:
@@ -29,7 +29,7 @@ apple_icon: img/pacman.jpg ## size:114px*114px,please put image into the theme f
 
 #### Author Avatar Picture
 author_img_enable: true ## display author avatar picture
-dataURI: false 
+dataURI: false
 ## if the picture's format is dataURI please set the value to true,otherwise set the value to false.
 ## convert an image into base 64 data URIs http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ .
 author_img_data: ''
@@ -38,7 +38,7 @@ author_img: img/author.jpg ## size:220px*220px.
 ## if the picture's format is `.png` or `.jpg`  instead of dataURI,you should set the `dataURI` value to false.
 
 #### Font
-ShowCustomFont: true  
+ShowCustomFont: true
 ## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/pacman/source/css`.
 
 #### Toc
@@ -49,7 +49,7 @@ toc:
 ## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
 
 #### Fancybox
-fancybox: false 
+fancybox: false
 ## if you use gallery post or want use fancybox please set the value to true.
 ## if you want use fancybox in ANY post please copy the file `fancybox.js`.
 ## in theme folder `/pacman/scripts` to your hexo blog folder `../scritps`.
@@ -66,32 +66,32 @@ author:
   tsina:      ## e.g. 1664838973  Your weibo ID,It will be used in share button.
 
 #### Comment
-duoshuo: 
+duoshuo:
   enable: true  ## duoshuo.com
-  short_name: 1MHz  ## duoshuo short name.
+  short_name: 1mhz  ## duoshuo short name.
 
 #### Share button
 jiathis:
   enable: false ## if you use jiathis as your share tool,the built-in share tool won't be display.
-  id:    ## e.g. 1501277 your jiathis ID. 
+  id:    ## e.g. 1501277 your jiathis ID.
   tsina: ## e.g. 1664838973 Your weibo id,It will be used in share button.
 
 #### Analytics
 google_analytics:
-  enable: false 
-  id:   ## e.g. UA-1766729-8 your google analytics ID.
-  site: ## e.g. yangjian.me your google analytics site or set the value as auto.
+  enable: true
+  id: UA-52933157-1 ## e.g. UA-1766729-8 your google analytics ID.
+  site: 1mhz.me ## e.g. yangjian.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 
 #### Custom Search
-google_cse: 
+google_cse:
   enable: false
   cx:  ## e.g. 000561263943549425496:mrzrm0gr4kg your Custom Search ID
-## https://www.google.com/cse/ 
+## https://www.google.com/cse/
 ## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
 ## set the 'front-matter' as
-## layout: search 
+## layout: search
 ## title: search
 ## ---
 
