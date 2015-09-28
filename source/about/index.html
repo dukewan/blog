@@ -1,0 +1,82 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Yizhao He</title>
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="robots" content="all" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+	<style>
+        * { padding: 0; margin: 0; }
+        body { background-color: #333; margin-bottom: 50px; }
+        h2 { color: rgba(255,255,255,1); font-family: "colfax", Helvetica; font-size: 34px; }
+        p { color: #fff; font-family: "colfax", Helvetica; font-size: 22px; line-height: 32px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
+        a { color: #fff; font-weight: 600; text-decoration: none; padding-bottom: -1px !important; border-bottom: 3px solid rgba(255,255,255,0.3); }
+        strong { font-weight: 600; }
+        a:hover { color: #fff; border-bottom: 3px solid rgba(255,255,255,1); }
+        #monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
+        #about { width: 450px; margin: 100px 160px 0 auto !important; padding: 20px; background: rgba(0,0,0,0.1)}
+        .initials { opacity: 0.8; }
+        small { color: #fff; font-family: "colfax", Helvetica; font-size: 14px; -webkit-font-smoothing: antialiased; }
+        @media (max-width: 767px) {
+            #monogram { position: relative; width: auto; padding: 20px; margin: 0; }
+            #about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
+            .backstretch { opacity: 0.2; }
+        }
+    </style>
+</head>	
+    
+<body>
+
+<!-- swap out for a logo -->
+<!--<div id="monogram">-->
+	<!--<img src="monogram.png" />-->
+<!--</div>-->
+
+<!-- swap out for information about yourself -->
+<div id="about">
+
+    <h2>Hello.</h2>
+    <p>I'm Yizhao He. I majored in Computer Science and Technology in Beijing University of Posts and Telecommunications from Sep. 2010 to Jun. 2014.</p>
+
+    <h2>Projects</h2>
+    <p>
+        Most of my projects are available at <a href="https://github.com/dukewan" target="_blank">dukewan@Github</a><br/>
+        Some online projects are as follows:<br/>
+        <a href="http://www.neotel.com.cn/" target="_blank">Neotel Homepage</a></br>
+        <a href="http://lure.100101.cn/" target="_blank">Lure LBS</a>
+
+    </p>
+
+    <h2>Networks</h2>
+    <p>
+        In order of output:</br>
+        <a href="http://weibo.com/2614346207/profile?rightmod=1&wvr=6&mod=personinfo" target="_blank">Sina Weibo</a></br>
+        <a href="http://1mhz.me/blog" target="_blank">Blog</a></br>
+        <a href="https://www.facebook.com/yizhao.he" target="_blank">Facebook</a></br>
+
+    </p>
+</div>
+
+<!--include jquery & backstretch-->
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+$(function(){
+     $(window).resize(function(){
+         if($(this).width() >= 767){
+             $.backstretch("bg.jpg", {speed: 150});
+         }
+      })
+      .resize();//trigger resize on page load
+});
+</script>
+
+</body>	
+</html>
