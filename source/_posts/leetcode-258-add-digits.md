@@ -1,4 +1,4 @@
-title: Reborn
+title: 'Leetcode #258 Add Digits'
 date: 2015/09/28 16:00
 categories:
 - Leetcode In JS
@@ -10,13 +10,13 @@ tags:
 
 ## Problem Description
 
-```
-Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.
+> Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.
 
-For example:
+> For example:
 
-Given num = 38, the process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one digit, return it.
-```
+> Given num = 38, the process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one digit, return it.
+
+<!--more-->
 
 ## Solution
 
@@ -28,7 +28,7 @@ Given num = 38, the process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one
  */
 var addDigits = function (num) {
     var quotient = num,
-		remainder = 0,
+        remainder = 0,
         sum = 0;
 
     while (quotient >= 10) {
