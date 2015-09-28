@@ -1,10 +1,10 @@
 title: 如何编写一个connect中间件
 date: 2014-07-12 21:20
 categories:
-- nodejs
+- Node.js
 tags:
-- nodejs
-- connect
+- Node.js
+- Connect
 - 中间件
 ---
 

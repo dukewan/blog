@@ -1,9 +1,9 @@
 title: 使用 nodejs 批量下载红宝书音频
 date: 2014-07-27 19:05
 categories:
-- nodejs
+- Node.js
 tags:
-- nodejs
+- Node.js
 ---
 
 # 前言

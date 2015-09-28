@@ -1,9 +1,7 @@
 title: 2014 Alibaba Summer Intern Day 1
-
 date: 2014-06-30 23:00:00
-
-categories:
-- 实习
+tags:
+- Intern
 ---
 
 今天入职，耶！

@@ -1,0 +1,37 @@
+.fancy-box {
+  background-color: #31be9f;
+  color: white;
+  overflow: hidden; }
+  .fancy-box .box-chart {
+    width: 100%;
+    height: 0;
+    background-color: white;
+    opacity: 0.5;
+    display: none; }
+  .fancy-box .description {
+    display: none;
+    line-height: 80px; }
+    .fancy-box .description .desc {
+      overflow: hidden;
+      font-size: 18px;
+      margin-top: 130px; }
+    .fancy-box .description .close-btn {
+      display: inline-block;
+      float: right;
+      font-size: 40px;
+      margin-top: 110px; }
+
+.content {
+  padding-bottom: 3%;
+  padding-top: 2.5%; }
+
+.kpi img {
+  display: block;
+  height: 40px;
+  margin-top: 60px;
+  margin-bottom: 30px; }
+.kpi h4 {
+  margin-bottom: 1em; }
+
+.center {
+  text-align: center; }
