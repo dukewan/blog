@@ -29,7 +29,7 @@ icon_font: default
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # MathJax Support
@@ -72,6 +72,7 @@ duoshuo_info:
   ua_enable: true
   admin_enable: false
   user_id: 0
+  #admin_nickname: ROOT
 
 ## DO NOT EDIT THE FOLLOWING SETTINGS
 ## UNLESS YOU KNOW WHAT YOU ARE DOING
@@ -89,4 +90,4 @@ js: js
 images: images
 
 # Theme version
-version: 0.4.4
+version: 0.4.5.1

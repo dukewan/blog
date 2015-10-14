@@ -13,33 +13,26 @@ tags:
 
 ## 前言
 
-上周参加了学校的 Career Fair，想锻炼下面试技巧和口语能力，为下学期找暑期实习做点准备。那天
-整条路都是熙熙攘攘的面试官和学生，Facebook、Amazon、Microsoft、eBay 这些大公司
-尤其火爆，有的人排了几个小时才面试上。
+上周参加了学校的 Career Fair，想锻炼下面试技巧和口语能力，为下学期找暑期实习做点准备。那天整条路都是熙熙攘攘的面试官和学生，Facebook、Amazon、Microsoft、eBay 这些大公司尤其火爆，有的人排了几个小时才面试上。
 
-因为我刚来 USC 两个月，实力不够，而且大公司又有冷冻期
-（一次没有录上半年内不再面试），所以我也没敢投大公司，挑了几个看起来不错的小公司试试水。一共
-投了五个，拿到 Percolate 和 Paypal 两家的 Coding Challenge，还有一家 Demand Media 说是
-非常喜欢我，之后会打电话让我去 onsite interview（为啥现在还没打电话！）。
+因为我刚来 USC 两个月，实力不够，而且大公司又有冷冻期（一次没有录上半年内不再面试），所以我也没敢投大公司，挑了几个看起来不错的小公司试试水。一共投了五个，拿到 Percolate 和 Paypal 两家的 Coding Challenge，还有一家 Demand Media 说是非常喜欢我，之后会打电话让我去 onsite interview（为啥现在还没打电话！）。
 
-这道题是 Percolate 的题，名字叫 Funky Rolodex(复杂的关系网) 并没有考算法，而是非常贴近实际
-需求，处理文本文件，筛选出正确的数据解析并输出成JSON格式。虽然并不难，但是需要注意的小细节不少，
-譬如输出结果要按照相应地缩进，要对数据按照 Lastname 和 Firstname 排序。我之前没有注意到排序
-这一点，导致后来重构了一些代码，而且对我来说，排序这里是最难的（后面会解释）。
+这道题是 Percolate 的题，名字叫 Funky Rolodex(复杂的关系网) 并没有考算法，而是非常贴近实际需求，处理文本文件，筛选出正确的数据解析并输出成JSON格式。虽然并不难，但是需要注意的小细节不少，譬如输出结果要按照相应地缩进，要对数据按照 Lastname 和 Firstname 排序。我之前没有注意到排序这一点，导致后来重构了一些代码，而且对我来说，排序这里是最难的（后面会解释）。
 
-总体来说这是一道非常好的非算法题，考到了JSON，正则表达式，面向对象编程，字符串比较等等，而且
-这道题非常考察细心程度。
+总体来说这是一道非常好的非算法题，考到了JSON，正则表达式，面向对象编程，字符串比较等等，而且这道题非常考察细心程度。
+
+<!--more-->
 
 ## Problem Description
 
-#### The Problem
+### The Problem
 
 You're tasked with taking entries of personal information in multiple formats
  and normalizing each entry into a standard JSON format. Write your formatted,
 valid JSON out to a file with two-space indentation and keys sorted
 alphabetically.
 
-#### Input
+### Input
 
 Your program will be fed an input file of n lines. Each line contains "entry"
 information, which consists of a first name, last name, phone number, color,
@@ -56,7 +49,7 @@ Some lines may be invalid and should not interfere with the processing of
 subsequent valid lines. A line should be considered invalid if its phone
 number does not contain the proper number of digits.
 
-#### Output
+### Output
 
 The program should write a valid, formatted JSON object. The JSON
 representation should be indented with two spaces and the keys should be sorted
@@ -72,7 +65,7 @@ name, first name).
 
 The complete output schema is specified below.
 
-#### Sample
+### Sample
 
 For the input
 
@@ -275,11 +268,11 @@ ROLE.prototype.outputJSON = function () {
 
 ## Testcases
 
-#### Download Link
+### Download Link
 
 [Download](/download/test_cases_funky_rolodex.zip)
 
-#### Usage
+### Usage
 
 ```
 /**
