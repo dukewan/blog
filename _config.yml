@@ -20,6 +20,9 @@ swiftype_key: TKRNhyNuSjyNHnq5Ghyo
 # the date when the site was setup
 since: 2014
 
+# make all file and directory lower case 
+filename_case: 1
+
 # Social links
 social:
   github: https://github.com/dukewan
