@@ -1,7 +1,7 @@
 title: 'Leetcode #258 Add Digits'
 date: 2015/09/28 16:00
 categories:
-- Leetcode in JS
+- Leetcode In JS
 tags:
 - Leetcode
 - JavaScript

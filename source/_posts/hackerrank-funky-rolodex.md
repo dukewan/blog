@@ -1,9 +1,9 @@
 title: Percolate Coding Challenge - Funky Rolodex
 date: 2015-10-14 10:02:48
 categories:
-- Coding Challenge
-- Hackerrank in JS
+- Hackerrank In JS
 tags:
+- Coding Challenge
 - JavaScript
 - Hackerrank
 - Regular Expression
@@ -28,7 +28,7 @@ tags:
 ### The Problem
 
 You're tasked with taking entries of personal information in multiple formats
- and normalizing each entry into a standard JSON format. Write your formatted,
+and normalizing each entry into a standard JSON format. Write your formatted,
 valid JSON out to a file with two-space indentation and keys sorted
 alphabetically.
 
