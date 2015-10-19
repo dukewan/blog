@@ -11,11 +11,13 @@ tags:
 
 使用 Hexo 部署博客到 Github Pages 时经常会遇到文件夹大小写问题导致的 404问题。
 
-譬如 Hexo 生成了一个 `Hackerrank in JS` Category文件夹，但是我后来把它改成了  `Hackerrank in JS`，即 in 的首字母大写了。Hexo会生成正确，但部署到 Github 上却老是不正确。
+譬如 Hexo 生成了一个 `Hackerrank in JS` Category文件夹，但是我后来把它改成了  `Hackerrank In JS`，即 in 的首字母大写了。Hexo会生成正确，但部署到 Github 上却老是不正确。
 
 # 原因
 
 git 默认忽略文件名大小写，所以即使文件夹大小写变更，git 也检测不到。
+
+<!--more-->
 
 # 解决办法
 
