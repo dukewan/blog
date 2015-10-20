@@ -19,24 +19,26 @@ tags:
 
 # Analysis
 
-动态规划问题。
+Dynamic Programming problem.
 
-设对于 n 个房子，能抢到的最大金钱数为 OPT(n)，每栋房子 i 的价值为 Vi。
+## Recursive Formula
 
-## 递归公式
+For n houses, let OPT(n) denotes the maximum amount we can rob, let Vi denotes the money that the ith house holds. 
 
-对于一栋房子来说，只有两个选择，抢或者不抢。
+For the nth house, we have two cases, rob or not rob.
 
-1. 抢： OPT(n) = Vn + OPT(n - 2)
-2. 不抢： OPT(n) = OPT(n - 1)
+1. rob： OPT(n) = Vn + OPT(n - 2)
+2. not rob： OPT(n) = OPT(n - 1)
 
-也就是，如果抢了 n, 那么最多只能抢 n 前面的第二家；如果没抢 n，那么可以抢 n 前面的那一家。
+It means that if we rob the nth house, we can only rob the (n-2)th house next, if we don't rob the nth house, then we can rob the (n-1)th house next. 
 
-## 初始化
+## Initialization
 
-1. n = 0，钱数为 0
-2. n = 1，钱数为第一家的钱数
-3. n = 2，钱数为第一家和第二家中钱数最大者
+n means the total number of houses.
+
+1. n = 0，total amount we can rob is 0
+2. n = 1，total amount equals to the money the first house holds
+3. n = 2，total amount equals to the larger amount of the first and the second house holds
 
 # Solution
 
