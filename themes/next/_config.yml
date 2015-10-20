@@ -50,7 +50,7 @@ sidebar: post
 
 
 # Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true
+scroll_to_more: false
 
 
 # Automatically add list number to toc.
@@ -69,10 +69,10 @@ use_font_lato: true
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: ROOT
+  ua_enable: false
+  admin_enable: true
+  user_id: 7423923
+  admin_nickname: 1MHz
 
 ## DO NOT EDIT THE FOLLOWING SETTINGS
 ## UNLESS YOU KNOW WHAT YOU ARE DOING
