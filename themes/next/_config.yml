@@ -33,7 +33,7 @@ highlight_theme: night
 
 
 # MathJax Support
-mathjax:
+mathjax: true
 
 
 # Schemes

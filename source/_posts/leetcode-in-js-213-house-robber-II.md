@@ -1,4 +1,4 @@
-title: 'Leetcode #213 House Robber II'
+title: 'Leetcode In JS #213 House Robber II'
 date: 2015-10-20 10:32:12
 categories:
 - Leetcode In JS
@@ -36,14 +36,14 @@ Compute the maximum amount of both cases and return the larger one.
 
 ## Recursive Formula
 
-For n houses, let OPT(n) denotes the maximum amount we can rob, let Vi denotes the money that the ith house holds. 
+For n houses, let OPT(n) denotes the maximum amount we can rob, let Vi denotes the money that the ith house holds.
 
 For the nth house, we have two cases, rob or not rob.
 
 1. rob： OPT(n) = Vn + OPT(n - 2)
 2. not rob： OPT(n) = OPT(n - 1)
 
-It means that if we rob the nth house, we can only rob the (n-2)th house next, if we don't rob the nth house, then we can rob the (n-1)th house next. 
+It means that if we rob the nth house, we can only rob the (n-2)th house next, if we don't rob the nth house, then we can rob the (n-1)th house next.
 
 ## Initialization
 
@@ -61,37 +61,39 @@ n means the total number of houses.
  * @return {number}
  */
 var rob = function(nums) {
-	var length = nums.length;
+    var length = nums.length;
 
-	if (length === 0) {
-		return 0;
-	}
+    if (length === 0) {
+        return 0;
+    }
 
-	if (length == 1) {
-		return nums[0];
-	}
+    if (length == 1) {
+        return nums[0];
+    }
 
-	if (length == 2) {
-		return Math.max(nums[0], nums[1]);
-	}
+    if (length == 2) {
+        return Math.max(nums[0], nums[1]);
+    }
 
-	var opt1 = [],
-		opt2 = [];
+    var opt1 = [],
+    opt2 = [];
 
-	// 1 to n-1
-	opt1[0] = nums[0];
-	opt1[1] = Math.max(nums[0], nums[1]);
-	for (var i = 2; i <= length - 2; i++) {
-		opt1[i] = Math.max(nums[i] + opt1[i - 2], opt1[i - 1]);
-	}
+    // 1 to n-1
+    opt1[0] = nums[0];
+    opt1[1] = Math.max(nums[0], nums[1]);
+    for (var i = 2; i <= length - 2; i++) {
+        opt1[i] = Math.max(nums[i] + opt1[i - 2], opt1[i - 1]);
+    }
 
-	// 2 to n
-	opt2[1] = nums[1];
-	opt2[2] = Math.max(nums[1], nums[2]);
-	for (var j = 3; j <= length - 1; j++) {
-		opt2[j] = Math.max(nums[j] + opt2[j - 2], opt2[j - 1]);
-	}
+    // 2 to n
+    opt2[1] = nums[1];
+    opt2[2] = Math.max(nums[1], nums[2]);
+    for (var j = 3; j <= length - 1; j++) {
+        opt2[j] = Math.max(nums[j] + opt2[j - 2], opt2[j - 1]);
+    }
 
-	return Math.max(opt1[length - 2], opt2[length - 1]);
+    return Math.max(opt1[length - 2], opt2[length - 1]);
 };
+
+
 ```

@@ -1,4 +1,4 @@
-title: 'Leetcode #198 House Robber'
+title: 'Leetcode In JS #198 House Robber'
 date: 2015-10-17 17:37:28
 categories:
 - Leetcode In JS
@@ -23,14 +23,14 @@ Dynamic Programming problem.
 
 ## Recursive Formula
 
-For n houses, let OPT(n) denotes the maximum amount we can rob, let Vi denotes the money that the ith house holds. 
+For n houses, let OPT(n) denotes the maximum amount we can rob, let Vi denotes the money that the ith house holds.
 
 For the nth house, we have two cases, rob or not rob.
 
 1. rob： OPT(n) = Vn + OPT(n - 2)
 2. not rob： OPT(n) = OPT(n - 1)
 
-It means that if we rob the nth house, we can only rob the (n-2)th house next, if we don't rob the nth house, then we can rob the (n-1)th house next. 
+It means that if we rob the nth house, we can only rob the (n-2)th house next, if we don't rob the nth house, then we can rob the (n-1)th house next.
 
 ## Initialization
 
@@ -49,22 +49,22 @@ n means the total number of houses.
  */
 
 function rob(nums) {
-	var length = nums.length;
+    var length = nums.length;
 
-	if (length === 0) {
-		return 0;
-	} else if (length == 1) {
-		return nums[0];
-	}
+    if (length === 0) {
+        return 0;
+    } else if (length == 1) {
+        return nums[0];
+    }
 
-	var opt = [];
-	opt[0] = nums[0],
-	opt[1] = Math.max(nums[0], nums[1]);
+    var opt = [];
+    opt[0] = nums[0],
+    opt[1] = Math.max(nums[0], nums[1]);
 
-	for (var i = 2; i < length; i++) {
-		opt[i] = Math.max(nums[i] + opt[i - 2], opt[i - 1]);
-	}
+    for (var i = 2; i < length; i++) {
+        opt[i] = Math.max(nums[i] + opt[i - 2], opt[i - 1]);
+    }
 
-	return opt[length - 1];
+    return opt[length - 1];
 }
 ```

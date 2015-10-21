@@ -1,4 +1,4 @@
-title: 'Leetcode #70 Climb Stairs'
+title: 'Leetcode In JS #70 Climb Stairs'
 date: 2015-10-17 15:38:29
 categories:
 - Leetcode In JS
@@ -36,11 +36,11 @@ tags:
 var W = [0, 1, 2];
 
 var climbStairs = function(n) {
-	if (W[n] === undefined){
-		W[n] = climbStairs(n - 2) + climbStairs(n - 1);
-	}
+    if (W[n] === undefined){
+        W[n] = climbStairs(n - 2) + climbStairs(n - 1);
+    }
 
-	return W[n];
+    return W[n];
 };
 ```
 
@@ -56,15 +56,15 @@ var climbStairs = function(n) {
  * @return {number}
  */
 /**
- * Dynamic Programming - Loop Version
+ * Dynamic Programming - Iteration Version
  */
 var climbStairs = function(n) {
-	var W = [0, 1, 2];
-	for (var i = 3; i <= n; i++) {
-		W[i] = W[i - 2] + W[i - 1];
-	}
+    var W = [0, 1, 2];
+    for (var i = 3; i <= n; i++) {
+        W[i] = W[i - 2] + W[i - 1];
+    }
 
-	return W[n];
+    return W[n];
 };
 ```
 

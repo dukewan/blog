@@ -1,4 +1,4 @@
-title: 'Leetcode #258 Add Digits'
+title: 'Leetcode In JS #258 Add Digits'
 date: 2015/09/28 16:00
 categories:
 - Leetcode In JS
@@ -45,5 +45,4 @@ var addDigits = function (num) {
         return sum;
     }
 };
-
 ```
